@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form>
+        <h1>Your shopping experience</h1>
+        <article>
+            <h3>What product did you buy?</h3>
+            <label for="product1">Product 1</label>
+            <input class="checkbox" type="checkbox" id="product1" name="product1"> <!--Ändra så man bara kan välja en box-->
+            <label for="product2">Product 2</label>
+            <input type="checkbox" id="product2" name="product2">
+            <label for="product3">Product 3</label>
+            <input type="checkbox" id="product3" name="product3">
+        </article>
+        <article>
+            <h3>When did you make your purchase?</h3>
+            <input type="date" id="purchase-date" name="purchase-date">
+        </article>
+        <article class="form-control">
+            <h3>Are you satisfied with your purchase?</h3>
+            <label for="yes">Yes</label>
+            <input class="checkbox"
+            type="checkbox" id="yes" name="yes"> <!--Ändra så man bara kan välja en box-->
+            <label for="no">No</label>
+            <input type="checkbox" id="no" name="no">  
+        </article>
+        <article>
+            <h3>If you where not satisfied please specifie your concerns here:</h3>
+            <input type="text" name="concerns" id="conserns" placeholder="Your concerns">
+        </article>
+    </form>
     
 </body>
 </html>
